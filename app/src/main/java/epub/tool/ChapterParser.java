@@ -10,9 +10,7 @@ import android.util.Log;
 
 import org.mapdb.BTreeMap;
 
-import java.io.BufferedOutputStream;
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -30,9 +28,8 @@ import epub.entity.PageEntity;
  * Created by liuqing on 15/1/15.
  */
 public class ChapterParser {
-    private static final String AES_KEY = "xingshulin.com.!#%@)@*^!^*";
 
-    private static final String XSL_FOOTNOTECLASS = "xsl-footnote-link";//"citic-footnote";//"xsl-footnote";//
+    private static final String QQ_FOOTNOTECLASS = "xsl-footnote-link";//"citic-footnote";//"xsl-footnote";//
 
     private Context ctx;
     private String rootPath;
@@ -813,7 +810,7 @@ public class ChapterParser {
     private void dealIndentation(boolean hasChangeLine) {
         TagStackEntity tagStackEntity = curTagEntity;
 
-        if (TextUtils.equals(tagStackEntity.get_tagName(), "ol")&&tagStackEntity.get_tagClass().equals(XSL_FOOTNOTECLASS)) {
+        if (TextUtils.equals(tagStackEntity.get_tagName(), "ol")&&tagStackEntity.get_tagClass().equals(QQ_FOOTNOTECLASS)) {
             isLoadFootNote = true;
         }else{
             int _lineHeight = 0;
