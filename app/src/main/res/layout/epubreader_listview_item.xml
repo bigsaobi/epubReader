@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="35dp"
+    android:gravity="center_vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+   >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="2dp"
+        android:gravity="center_vertical"
+        >
+        <TextView
+            android:id="@+id/epubDirName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:lineSpacingExtra="3dp"
+            android:lines="2"
+            android:ellipsize="end"
+            android:text=""
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:gravity="center_vertical" />
+
+        <TextView
+            android:id="@+id/epubPageNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical|right"
+            android:textSize="13sp"
+            android:textColor="@color/epub_book_titleandpageindex_whitesytle" />
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/epubDirDiv"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EFE2C2"
+        android:layout_marginLeft="7dp"
+        android:layout_marginBottom="7dp"
+        android:layout_alignParentBottom="true"
+        />
+</RelativeLayout>

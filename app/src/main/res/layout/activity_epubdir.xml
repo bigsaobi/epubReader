@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_epubdir_rootView"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/epub_book_background_whitesytle"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="48dp"
+        android:background="#222222"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/epubDirTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="47dp"
+            android:gravity="center"
+            android:text="目 录"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <View
+            android:id="@+id/activity_title_div"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="@color/main_bg" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/activity_epubdirListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="#00000000"
+        android:listSelector="@drawable/epubreader_dir_item"
+        android:drawSelectorOnTop="false"
+        android:divider="#00000000"
+        android:dividerHeight="0px"
+        android:scrollbars="vertical" >
+    </ListView>
+</LinearLayout>

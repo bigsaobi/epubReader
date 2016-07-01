@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/chapter_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/epub_book_titleandpageindex_whitesytle"
+        android:gravity="left"
+        android:padding="5dp"
+        android:textSize="13sp"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        />
+    <epub.view.EpubPageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="20dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/pageview" />
+    <TextView
+        android:id="@+id/pageindex"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/epub_book_titleandpageindex_whitesytle"
+        android:textSize="13sp"
+        android:gravity="right"
+        android:padding="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="20dp"
+        />
+</RelativeLayout>

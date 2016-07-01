@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_bg">#eeeeee</color>
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="detail_bg">#fafafa</color>
+    <color name="_333333">#333333</color>
+    <color name="textColor_gray">#999999</color>
+
+    <drawable name="epubreader_dir_item_normal">#00000000</drawable>
+    <drawable name="epubreader_dir_item_press">#EFE2C2</drawable>
+    <drawable name="epubreader_dir_item_nightstyle_normal">#1e1e29</drawable>
+    <drawable name="epubreader_dir_item_nightstyle_press">#32323f</drawable>
+    <drawable name="transparent">#00000000</drawable>
+    <drawable name="transparent_s">#aadddddd</drawable>
+
+    <color name="epub_book_background_whitesytle">#F6EFDE</color>
+    <color name="epub_book_background_nightsytle">#1e1e29</color>
+    <color name="epub_book_titleandpageindex_whitesytle">#FF8000</color>
+    <color name="epub_book_titleandpageindex_nightsytle">#956141</color>
+    <color name="epub_book_alertcontentcolor_whitestyle">#FF000000</color>
+    <color name="epub_book_alertcontentcolor_nightstyle">#8e99b2</color>
+    <color name="epub_bookdir_listitembg_whitestyle">#EFE2C2</color>
+    <color name="epub_bookdir_listitembg_nightstyle">#32323f</color>
+</resources>

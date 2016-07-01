@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pop_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+    android:background="#00000000"
+    android:orientation="vertical" >
+
+    <ImageButton
+        android:id="@+id/black"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        android:background="@mipmap/btn_pages_back_n" />
+
+    <ImageButton
+        android:id="@+id/dir"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="12dp"
+        android:background="@mipmap/btn_pages_contents_n" />
+
+    <ImageButton
+        android:id="@+id/nightstyle"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_toRightOf="@id/dir"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="12dp"
+        android:background="@mipmap/btn_pages_mode_night_n" />
+
+</RelativeLayout>
